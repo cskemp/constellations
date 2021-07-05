@@ -1,7 +1,7 @@
 #!/bin/bash
 
-
-ffmpeg -i frame_%d.png  output.mp4
+ffmpeg -framerate 1 -i frame_%d_egs.png  output.mp4
+# yuv420p allows mp4 to be opened by quicktime
 ffmpeg -i output.mp4 -pix_fmt yuv420p  constellations.mp4
 
 
