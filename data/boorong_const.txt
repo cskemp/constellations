@@ -1,0 +1,13 @@
+# Based on Stanbridge, On the astronomy and mythology of the aborigines of Victoria, along with discussion in Hamacher, On the astronomical knowledge and traditions of aboriginal australians
+# Entered by C Kemp, Nov 2017
+# Bermbermgle (Alp, Bet Cen)
+[5459,5267]
+# Tourtchinboionggerra (Coma Berenices)
+# Kulkunbulla (Eps, Zet, Del, The, Iota Orionis)
+[1903,1948,1852, 1897,1899]
+# Larnankurrk (Pleiades)
+[1165, 1178, 1142, 1149, 1156, 1145]
+# Won ( Corona Australis -- following Hamacher)
+[7226, 7254, 7259, 7242]
+# Otchocut (Dolphinus)
+[7906, 7882, 7948, 7928, 7852]

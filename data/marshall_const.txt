@@ -1,0 +1,95 @@
+# From Erdland, based on tables and material in following pages
+# consistent policy: no joins indicated by curly braces
+# 3. jemenuwe
+[5735, 5563, 5430]
+# 4 + 5: . aolot + mare eo an aolot
+[5986, 6132, 6396, 6223, 6315]
+# 6. Wadal kan (should be joined with 7?)
+[4301, 4295]
+# 7. Wa en an dumur
+[4554, 4660, 4905, 5054, 5191]
+# 8+9: Kam kan (should join?) 
+[4069, 4033]
+[3775, 3594, 3569]
+# 11+12 (should be joined?). Probably not -- so drop them as singletons
+# [5056, 5340]
+# 13
+[5602, 5733, 5774, 5800]
+# 14
+# doesn't seem to make sense to include 3410, 3482, 3665, 3454, 3418, which are in parentheses] 
+[6714, 6723, 6752] 
+# 15 (should be joined with 14?)
+# doesn't seem to make sense to include  1542, Alp CaM, which is in parentheses]
+# [6629] 
+# 16  NB: just listed as Corona Borealis
+[5971, 5947, 5889, 5849, 5793, 5747, 5778]
+# 17 (should be joined with 18, 19, 21?) 
+[6165, 6134, 6084]
+# 18  
+[6553, 6380, 6271, 6247, 6241]
+# 19  
+[6027, 5984, 5953, 5944, 5928]
+# 21
+[6453, 6402]
+# 22
+[6527, 6508, 6580, 6615]
+# 23. XXX: perhaps shouldn't be grouped -- "oblique stars of heaven"
+[7121, 5685]
+# 24
+[5190, 5193, 5248]
+# 26: one scholar says "Corvus" instead
+[5168, 5192, 5210]
+# 27: jiget im ruget
+[5459, 5267]
+# 28: Crux (NB: no stars listed)
+[4730, 4853, 4763, 4656]
+# 29: Corona Australis (no stars listed) (followed ptolemy)
+[6951, 7068, 7122, 7188, 7242, 7259, 7254, 7227, 7152, 7129, 7021, 6953, 6951]
+# 30: 15 Piscium: check (used 15 G Piscium)
+# [8916, 8969, 434, 8776]
+# think this should be Piscium Austr -- made this change
+[8326, 8305, 8431, 8447]
+# 32: Grus (no stars listed)
+# [8425, 8636, 8353, 8556, 8675, 8820, 8747]
+# 32: stars listed in following notes: Alpha; nu, delta beta, epsilon 
+[8425, 8552, 8556, 8636, 8675]
+# 34: 
+[7557, 7602, 7525]
+# 35: 
+[7176, 7235, 7315]
+# 36. Weird to join Alp and Bet Sag with Del and Gam -- but that's what table says, and no discussion in subsequent notes
+[7348, 7337, 6859, 6746]
+# 37
+[7906, 7882, 7948, 7928]
+# 38 shoudl be joined with 39?
+[8775, 8684, 8667]
+# 39 shoudl be joined with 38?
+[8518, 8559, 8539]
+# 40. Cassiopeia
+[168, 21, 264, 403, 542]
+# 43
+[617, 553, 546]
+# 44
+[1017, 936, 1122]
+# 47. Pleiades (no stars listed)
+[1165, 1178, 1142, 1149, 1156, 1145]
+# 48. 
+[1346, 1373, 1409]
+# 49
+[1396, 1394]
+# 51, 52, 53: joined because of text
+[2061, 1790, 1879, 1876, 1907]
+# 54: text mentions delta, epsilon, zeta, sigma, iota, 49, upsilon, eta, 27, psi1, psi2, 32, 52, usw. Seems a bit strange but keep this list anyway.
+[1852, 1903, 1948, 1931, 1899, 1855, 1788, 1789, 1811, 1937, 1787, 1839, 1999]
+# 57
+[1641, 1612]
+# 58
+[2891, 2990]
+# 59 (M44 doesn't have bright star number)
+[3449, 3461] 
+# 61. 29 LMi doesn't have bright star number
+[4100, 4090, 4137, 4150, 4168, 4124, 4166, 4203]
+# 62. Canopus puppis Argus (think this is just Canopus)
+# 63. Question mark so drop
+# 64. Hydrus (no stars listed)
+[591, 98, 1208]

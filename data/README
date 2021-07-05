@@ -1,0 +1,23 @@
+## Star data
+
+hygfull.csv: HYG v1.1 database ( downloaded from http://www.astronexus.com/hyg )
+bsc5.dat: Yale Bright Star Catalog ( downloaded from  http://tdc-www.harvard.edu/catalogs/bsc5.html . We use bsc5.dat.gz [ASCII catalog] )
+
+## Constellation data
+
+Systems manually entered by Charles Kemp. HR numbers are used in all cases.
+
+boorong_const.txt
+india_const.txt
+indomalay_const.txt
+marshall_const.txt
+pacariqtambo.txt
+
+Systems downloaded from Stellarium (current as of May 25, 2020). These files use HIP numbers. 
+
+stellarium/*
+
+## Geographic Regions
+
+macrogroups.csv: manually entered by Charles Kemp
+

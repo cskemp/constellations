@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+ffmpeg -i frame_%d.png  output.mp4
+ffmpeg -i output.mp4 -pix_fmt yuv420p  constellations.mp4
+
+
+
+
+
+

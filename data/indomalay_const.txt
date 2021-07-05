@@ -1,0 +1,38 @@
+# Based on Ammarell, Astronomy in the Indo-Malay Archipelago, in Selin, Encyclopedia of the History of Science, Technology and Medicine in non-Western cultures. p 346 of pdf
+# Source also includes a couple of figures and the groups in these figures don't seem to perfectly match the groups in the table.
+# Should look for Ammarell, Bugis navigation, which may describe asterisms in more detail.
+# Entered by C Kemp, Nov 2017
+# Source also contains figures showing each group (no lines between stars)
+# 1. bintoeng bahte (Alpha and Beta Centauri)
+[5459, 5267]
+# 2. bintoeng bola keppang (Alpha-Delta, Mu Crucis
+[4730, 4853, 4763, 4656, 4898]
+# 3. bembe (Coal Sack Nebula in Crux)
+# 4. bintoeng bale mangngwigeng (Scorpius south -- based on figure)
+#       Lam, Ups, Kap, Iot, The Sco along with  Alp Ara (?)
+[6527,6508,6580,6615,6553,6510]
+# 5. bintoeng lambarue (Scoripus north)
+#       Bet, Del, Pi, Sig, Alp, Tau, Eps, Mu, Zeta
+[5984,5953,5944,6084,6134,6165,6241,6247,6271]
+# 6. (no name) Alpha Scorpii
+[6134]
+# 7. bintoeng kappala'e (Alpha-Eta Ursa Majoris)
+[4301,4295,4554,4660,4905,5054,5191]
+# 8. bintoeng kappala'e (Alpha-Eta Ursa Majoris; Beta, Gamma Ursa Minoris)
+#   figure seems to include another star -- Psi Ursa Major?
+[4301,4295,4554,4660,4905,5054,5191,5563,5735]
+# 9. bintoeng balu Mandara (Alpha, Beta Ursa Majoris)
+[4301,4295]
+# 10. bintoeng timo (Alpha Aquilae)
+[7557]
+# 11. pajjekoe (Alpha-Eta Orionis)
+#   figure seems to include Kappa Orionis, also one extra star -- from Lepus?
+[2061,1713,1790,1852,1903,1948,1788]
+# 12. tanra tellue (Delta, Epsilon, Zeta Orionis)
+[1852,1903,1948]
+# 13. worong-prongnge bintoeng pitu (M45 in Taurus: "cluster seven stars"
+# 1180 not included because combined with 1178
+[1165, 1178, 1142, 1149, 1156, 1145]
+# 14. Venus: morning
+# 15. Venus: evening
+# 16. Milky way

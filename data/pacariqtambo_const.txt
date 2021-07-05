@@ -1,0 +1,17 @@
+# From Urton, Constructions of the Ritual-Agricultural Calendar in Pacariqtambo, Peru. (in Del Chamberlain, Carlson and Young,  Songs from the sky : indigenous astronomical and cosmological traditions of the world)
+# 1d. Head of Scorpius (head based on Fig 32 in urton_atthecrossroadsoftheearthandskyanandeancosmology_selections.pdf
+[5984, 5953, 5944, 6134, 6084]
+# 1e. Southern Cross
+[4730, 4853, 4763, 4656]
+# 1f. false cross in Carina (NB: could he mean the Diamond cross?)
+[3485, 3734, 3307, 3699]
+# 1g. the Pleiades
+[1165, 1178, 1142, 1149, 1156, 1145]
+# 1h. the belt and sword of Orion
+[1948, 1903, 1852]
+# 1j. the belt of Orion
+[1948, 1903, 1852, 1892, 1899,1897]
+# 1k. beta, gamma, eta, zeta, epsilon Arae
+[6461,6462,6229,6285,887]
+# 1l. Corona Australis
+[7226, 7254, 7259, 7242]

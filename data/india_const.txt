@@ -1,0 +1,59 @@
+# From Table III in kaye_hinduastronomy.pdf (p 83 of pdf). 
+# See also chart in kanas_starmapshistoryartistryandcartography_naksatra.pdf) 
+# 1. Krittika (Pleiades: no specific stars listed except Eta Tauri)
+[1165, 1178, 1142, 1149, 1156, 1145]
+# 2. Rohini (Alpha, Theta, Gamma, Delta, Eps Tauri)
+[1457, 1412, 1346, 1373, 1380, 1409]
+# 3. Mrigasiras (Lambda, Phi1, Phi2 Orionis)
+[1879, 1876, 1907]
+# 4. Ardra (Alp Orionis)
+[2061]
+# 5. Punarvasu (Bet, Alp Geminorum)
+[2990, 2891]
+# 6. Pushya (Theta, Delta, Gamma Cancri)
+[3357,3461, 3449]
+# 7. Aslesha (Eps, Delta, Sigma, Eta, Rho Hya)
+[3482, 3410, 3418, 3454, 3492]
+# 8. Magha (Alp, Eta, Gamma, Zeta, Mu, Eps Leo)
+[3982, 3975, 4057, 4031, 3905, 3873] 
+# 9. Purva-Phalguni (Del, The Leo)
+[4357, 4359]
+# 10. Uttara-Phalguni (Beta, 93 Leo)
+[4534, 4527]
+# 11. Hasta (Delta, Gamma, Eps, Alp, Bet Crv)
+[4757,4662,4630,4623,4786]
+# 12. Chitra (Alp Virginis)
+[5056]
+# 13. Svati (Alp Bootis)
+[5340]
+# 14. Visakha (Iota, Gamma, Beta, Alpha Librae)
+[5787,5652]
+# 15. Anuradha (Delta, Beta, Pi Sco)
+[5953, 5984, 5944]
+# 16. Jyeshtha (Alpha, Sigma, Tau Sco)
+[6134,6084,6165]
+# 17. Mula (Lambda, Mu, Chi, Iota, Theta, Xi, Mu, Eps Sco)
+#  think this should be (Lambda, Ups, Kappa, Iota, Theta, Eta, Zeta, Mu, Eps Sco)
+[6527,6508,6580, 6615,6553, 6380,6271,6247,6241]
+# 18. Purva-Ashadha (Del, Eps Sagittarii)
+[6859,6879]
+# 19. Uttara-Ashadha (Sigma, Zeta Sagittarii)
+[7121,7194]
+# 20. Abhijit (Alpha, Eps, Zeta Lyrae )
+[7001,7051,7056]
+# 21. Sravana (Alpha, Beta, Gamma Aquilae)
+[7557,7602,7525]
+# 22. Sravishtha (Beta, Alp, Gamm, Del Delphini)
+[7882,7906,7948,7928]
+# 23. Satabishaj (Lam Aquarii, etc)
+[8698]
+# 24. Purva-Bhadrapada (Alp, Bet Pegasi)
+[8781,8775]
+# 25. Uttara-Bhadrapada (Gamma Pegasi, Alpha Andromedae)
+[39,15]
+# 26. Revati (Zeta Piscium, etc)
+[361]
+# 27. Asvini (Beta, Gamma Arietis)
+[553,546]
+# 28. Bharani (35, 39, 41 Arietis)
+[801,824,838]

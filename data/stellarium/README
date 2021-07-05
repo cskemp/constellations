@@ -1,0 +1,8 @@
+Stellarium sky cultures as of 25/5/2020
+
+Stellarium can be downloaded using
+
+> git clone https://github.com/Stellarium/stellarium.git
+
+Cultures not included in our analyses can be found in unused/
+
