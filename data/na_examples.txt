@@ -1,0 +1,7 @@
+# Examples for Nature Astronomy comment
+# Need 5.5 threshold for Council of Chiefs
+# 001,Council of Chiefs,,49DelBoo,2EtaCrB,2EtaCrB,3BetCrB,3BetCrB,5AlpCrB,5AlpCrB,8GamCrB,8GamCrB,10DelCrB,10DelCrB,13EpsCrB,13EpsCrB,14IotCrB,14IotCrB,15RhoCrB,15RhoCrB,11KapCrB,11KapCrB,Zet2CrB,Zet2CrB,51Mu1Boo,51Mu1Boo,49DelBoo,4TheCrB,4TheCrB
+# 001,Bear's Den,,49DelBoo,4TheCrB,4TheCrB,3BetCrB,3BetCrB,5AlpCrB,5AlpCrB,8GamCrB,8GamCrB,10DelCrB,10DelCrB,13EpsCrB,13EpsCrB,14IotCrB,14IotCrB,15RhoCrB,15RhoCrB,11KapCrB,11KapCrB,Zet2CrB,Zet2CrB,51Mu1Boo
+001,Kaitusiyuman,,4TheCrB,3BetCrB,3BetCrB,5AlpCrB,5AlpCrB,8GamCrB,8GamCrB,10DelCrB,10DelCrB,13EpsCrB,13EpsCrB,14IotCrB,14IotCrB,15RhoCrB,15RhoCrB,5827,5827,51Mu1Boo,51Mu1Boo,1ChiHer,1ChiHer,6091,51Mu1Boo,42BetBoo,42BetBoo,27GamBoo,27GamBoo,19LamBoo,19LamBoo,39Boo,27GamBoo,25RhoBoo,25RhoBoo,28SigBoo,28SigBoo,EpsBoo,EpsBoo,26Boo,28SigBoo,49DelBoo,49DelBoo,4TheCrB
+
+

@@ -19,6 +19,7 @@ with open('../data/hygfull.csv', 'r') as csvfile:
 
 # manual additions
 hrnames.append( ('5506', 'EpsBoo') )   # 5505 and 5506 form a binary star
+hrnames.append( ('5834', 'Zet2CrB') )
 
 with open("../output/data/hrnames.txt", "w") as f:
     json.dump(hrnames, f)

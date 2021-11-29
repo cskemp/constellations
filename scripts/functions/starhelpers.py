@@ -65,6 +65,16 @@ def invhdict(starfile):
         invhd[h] = i
     return invhd
 
+def invbayerd(starfile):
+    with open(starfile, "rb") as f:
+        stars = json.load(f)
+    invbayerd = {}
+    for (i, (h,r,d,m,n)) in enumerate(stars):
+        invbayerd[n] = i
+    return invbayerd
+
+
+
 def starinddict(stars):
     sd = {}
     for si, s in enumerate(stars):
