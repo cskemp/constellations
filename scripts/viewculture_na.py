@@ -9,9 +9,13 @@ import starhelpers as sh
 import pandas as pd
 
 # make plot for each culture
-infiles  = ['../data/na_examples.txt']
-#infiles  = ['../output/data/western_stellarium_processed.txt']
+infiles  = ['../data/na_councilofchiefs.txt']
+infiles  = ['../data/na_bearden.txt']
+infiles  = ['../data/na_kaitusiyuman.txt']
 
+infiles  = ['../data/na_councilofchiefs.txt',
+            '../data/na_bearden.txt',
+            '../data/na_kaitusiyuman.txt']
 
 starfile = '../output/data/stars.txt'
 brightthresh = 5.5
@@ -25,15 +29,19 @@ invhd = sh.invhdict(starfile)
 
 for infile in infiles:
     print(infile)
-    #hc = readgroups.group(infile, invhd)
-    #he = sh.mstedges(hc, stargraph)
-    [hc, he] = readgroups.readbayer(infile, stargraph, invbayerd)
+    thisstargraph = nx.create_empty_copy(stargraph)
+    [hc, he] = readgroups.readbayer(infile, thisstargraph, invbayerd)
+
+    # if we want to plot all stars
+    # thisstargraph = nx.create_empty_copy(stargraph)
+    # to plot stars in first asterism only
+    thisstargraph = nx.create_empty_copy(stargraph.subgraph(hc[1]))
 
     prefix = os.path.splitext(os.path.basename(infile))[0]
 
     # make single plot with entire sky
     figfile = "../output/figures/single_" + prefix
-    plotmodelsoln_single.plotmodelsoln(hc, he, stargraph, prefix ='', magthresh=brightthresh, edgecol=0, showlabs=0, show=1)
-    plotmodelsoln_single.plotfullwithexamples(hc, he, stargraph, flip=0, prefix=figfile + '_egs', samecol=0,  magthresh=brightthresh, show=0)
+    plotmodelsoln_single.plotmodelsoln(hc, he, thisstargraph, prefix ='', magthresh=brightthresh, edgecol=0, showlabs=0, show=0)
+    plotmodelsoln_single.plotna(hc, he, thisstargraph, flip=0, prefix=figfile + '_egs', samecol=0,  magthresh=brightthresh, show=1)
     #plt.close()
 

@@ -292,6 +292,115 @@ def plotfullwithexamples(clusters, edges, sg, flip = 0, prefix='', show = 1, edg
     if show:
         plt.show(block=False)
 
+def plotna(clusters, edges, sg, flip = 0, prefix='', show = 1, edgecol = 1, showlabs=0, samecol=0,  title='', magthresh=4.5, edgecount= 0, xlim=(-np.pi-0.04, np.pi + 0.04), ylim=(-0.5*np.pi, 0.03 + 0.5*np.pi), figsize=(3.0, 3.0)):
+
+    plt.rcParams['figure.figsize'] = figsize
+    plt.close()
+
+    fig = plt.figure(constrained_layout=True)
+    gs = gridspec.GridSpec(1, 1, figure=fig)
+
+    ax1 = fig.add_subplot(gs[0,0])
+
+    if re.search('kaitusiyuman', prefix):
+        xlims = (0.57, 1.17)
+        ylims = (0.32, 0.92)
+    else:
+        #xlims = (0.67, 0.89)
+        #ylims = (0.39, 0.61)
+        xlims = (0.57, 1.17)
+        ylims = (0.32, 0.92)
+
+    plot_graph_sub(ax1, sg, '', xlims, ylims, magthresh, edgecount, showlabs)
+    ax1.axis('off')
+
+    if prefix:
+        plt.savefig(prefix+ '.pdf', bbox_inches="tight")
+        plt.savefig(prefix+ '.svg', format="svg", bbox_inches="tight")
+
+    if show:
+        plt.show(block=False)
+
+
+def plotfullwithexamples_na(clusters, edges, sg, flip = 0, prefix='', show = 1, edgecol = 1, showlabs=0, samecol=0,  title='', magthresh=4.5, edgecount= 0, xlim=(-np.pi-0.04, np.pi + 0.04), ylim=(-0.5*np.pi, 0.03 + 0.5*np.pi), figsize=(18.0, 9.0)):
+
+    plt.rcParams['figure.figsize'] = figsize
+    plt.close()
+    fig = plt.figure(constrained_layout=True)
+    gs = gridspec.GridSpec(7, 10, figure=fig)
+    gs.update(left=0.0, right=1.0, wspace=0.01, hspace=0.01)
+    if flip:
+        ax1 = fig.add_subplot(gs[6, 0])
+        ax2 = fig.add_subplot(gs[6, 1])
+        ax3 = fig.add_subplot(gs[6, 2])
+        ax4 = fig.add_subplot(gs[6, 3])
+        ax5 = fig.add_subplot(gs[6, 4])
+        ax6 = fig.add_subplot(gs[6, 5])
+        ax7 = fig.add_subplot(gs[6, 6])
+        ax8 = fig.add_subplot(gs[6, 7])
+        ax9 = fig.add_subplot(gs[6, 8])
+        ax10 = fig.add_subplot(gs[6, 9])
+        ax11 = fig.add_subplot(gs[0:6, :])
+    else:
+        ax1 = fig.add_subplot(gs[0, 0])
+        ax2 = fig.add_subplot(gs[0, 1])
+        ax3 = fig.add_subplot(gs[0, 2])
+        ax4 = fig.add_subplot(gs[0, 3])
+        ax5 = fig.add_subplot(gs[0, 4])
+        ax6 = fig.add_subplot(gs[0, 5])
+        ax7 = fig.add_subplot(gs[0, 6])
+        ax8 = fig.add_subplot(gs[0, 7])
+        ax9 = fig.add_subplot(gs[0, 8])
+        ax10 = fig.add_subplot(gs[0, 9])
+        ax11 = fig.add_subplot(gs[1:, :])
+    plot_graph_sub(ax1, sg, '1. Pleiades', (-2.52, -2.27), (0.41, 0.435), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax2, sg, '2. Orion', (-3.02, -2.62), (-0.2, 0.2), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax3, sg, '3. Hyades', (-2.65, -2.5), (0.23, 0.38), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax4, sg, '4. Big Dipper', (1.1, 2.1), (0.5, 1.5), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax5, sg, '5. Southern Cross', (1.47, 1.71), (-1.17, -0.93), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax6, sg, '6. Corona Borealis', (0.66, 0.89), (0.41, 0.64), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax7, sg, '7. Cassiopeia', (-2.0,-1.4), (0.75, 1.35), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax8, sg, '8. Corona Australis', (-0.17,0.03), (-0.8, -0.6), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax9, sg, '9. Castor & Pollux', (2.82, 2.92), (0.47, 0.57), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax10, sg, '10. Corvus', (1.53, 1.73), (-0.46, -0.26), magthresh, edgecount, showlabs)
+    plot_graph_sub(ax11, sg, '', xlim, ylim, magthresh=magthresh, edgecount=edgecount, showlabs=showlabs)
+
+    if re.search('consensus_edgethick_na_egs', prefix):
+        ax11.text( -2.32,  0.425, '1')
+        ax11.text( -3.07,  0.12, '2')
+        ax11.text( -2.71,  0.3, '3')
+        ax11.text( 2.05,  1.0, '4')
+        ax11.text( 1.71, -1.01, '5')
+        ax11.text( 0.71, 0.53, '6')
+        ax11.text(-1.7, 1.12, '7')
+        ax11.text( -0.10, -0.67, '8')
+        ax11.text( 2.8, 0.56, '9')
+        ax11.text( 1.69, -0.30, '10')
+        ax11.text( 1.188, -1.18, '11')
+        ax11.text(-0.28, 0.21, '12')
+        ax11.text( 0.988, 1.35, '13')
+        ax11.text( 0.72, -0.395, '14')
+        ax11.text( 0.318, -0.638, '15')
+        ax11.text( 2.07, 0.346, '16')
+        ax11.text(-0.54, 0.33, '17')   #Del
+        ax11.text( -0.58, 0.87, '18')
+        ax11.text( -0.00, 0.74, '19')
+        ax11.text( -1.32, 0.522 , '20')
+        ax11.text(-1.880, 0.363, '21') # Head of Aries
+        ax11.text( 0.064, 0.889, '22')
+        ax11.text( 0.0, -0.39, '23')
+
+    if prefix and re.search('videoframes', prefix):
+        ax11.set_title(title)
+        plt.savefig(prefix+ '.png')
+    elif prefix:
+        plt.savefig(prefix+ '.pdf', bbox_inches="tight")
+        plt.savefig(prefix+ '.svg', format="svg", bbox_inches="tight")
+
+    if show:
+        plt.show(block=False)
+
+
 
 def plot_graph_sub(ax, sg, title, xlim, ylim, magthresh = 4.0, edgecount= 0, showlabs=0):
     plot_graph(ax, sg, magthresh=magthresh, edgecount=edgecount, showlabs=showlabs)

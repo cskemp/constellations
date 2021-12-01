@@ -1,0 +1,4 @@
+# Examples for Nature Astronomy comment
+001,Kaitusiyuman,,4TheCrB,3BetCrB,3BetCrB,5AlpCrB,5AlpCrB,8GamCrB,8GamCrB,10DelCrB,10DelCrB,13EpsCrB,13EpsCrB,14IotCrB,14IotCrB,15RhoCrB,15RhoCrB,5827,5827,51Mu1Boo,51Mu1Boo,1ChiHer,1ChiHer,6091,51Mu1Boo,42BetBoo,42BetBoo,27GamBoo,27GamBoo,19LamBoo,19LamBoo,39Boo,27GamBoo,25RhoBoo,25RhoBoo,28SigBoo,28SigBoo,EpsBoo,EpsBoo,26Boo,28SigBoo,49DelBoo,49DelBoo,4TheCrB
+
+

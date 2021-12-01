@@ -1265,6 +1265,7 @@ def colorgroups(stargraph):
                     ('DelVel', 'mediumpurple'),
                     ('62EtaAqr', 'orchid'),
                     ('76DelAqr', 'orchid'),
+                    ('5827', 'steelblue'),
                     ('25RhoBoo', 'coral'),
                     ('3AlpLyr', 'darkorange'),
                     ('10BetLyr', 'darkorange'),
@@ -1309,7 +1310,7 @@ def colorgroups(stargraph):
                     ('ZetAra', 'royalblue'),
                     ('11EpsHya', 'navy'),
                     ('GamCen', 'royalblue'),
-                    ('AlpLup', 'mediumslateblue'),
+                    ('AlpLup', 'mediumslateblue')
                     ]
     clustercolors_g = collections.OrderedDict()
     graphnodesout = '../output/data/all_stargraph.txt'
