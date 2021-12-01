@@ -21,10 +21,19 @@ integer_breaks <- function(n = 3, ...) {
 
 # Make Figure 3
 
-cscores_orig <- read_csv(here("output","results", "perculturescores.csv"), col_names = c('culture', 'num', 'score') ) 
+regions <- read_csv(here("data", "macrogroups.csv")) %>% 
+  mutate(culture = str_remove(culture, "_stellarium"))
+  
+
+cscores_orig <- read_csv(here("output","results", "perculturescores.csv"), col_names = c('culture', 'num', 'score') ) %>% 
+  left_join(regions, by = "culture")
+
 
 cscores <- cscores_orig %>% 
-  mutate(culture =  recode(culture, "arabic_moon_stations"="arabic", "vanuatu_netwar"="lenekel", "mulapin"="babylonian", "india"="indian", "indomalay" = "Indo-Malay", "maya" = "mayan"))
+  mutate(culture =  recode(culture, "arabic_moon_stations"="arabic", "vanuatu_netwar"="lenekel", "mulapin"="babylonian", "india"="indian", "indomalay" = "Indo-Malay", "maya" = "mayan")) %>% 
+  mutate(macrogroup = recode(macrogroup, "asia"="(AS)", "australia" = "(AU)", "nthamerica" = "(N)", "oceania" = "(O)", "sthamerica" = "(S)", "western" = "(W)")) %>%  
+  mutate(culture = paste(culture, macrogroup))
+
 
 cscores_ord <- cscores %>% 
   group_by(culture) %>% 
@@ -44,7 +53,7 @@ perculturepic <- cscores %>%
   theme(strip.background = element_blank())
 plot(perculturepic)
 
-ggsave(here("output","figures", "perculturehistogram.pdf"), plot = perculturepic, width = 6, height=4)
+ggsave(here("output","figures", "perculturehistogram.pdf"), plot = perculturepic, width = 6.75, height=4.5)
 
 
 # Make Figure S14 
