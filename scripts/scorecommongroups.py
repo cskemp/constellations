@@ -29,7 +29,7 @@ def scorecommongroups(includemixed = 0):
         stars = json.load(f)
 
     # convert list to tuple so we can easily remove duplicates
-    clist = list(map(tuple, map(set, itertools.chain.from_iterable(csystems))))
+    clist = list(map(lambda x: tuple(sorted(x)), map(set, itertools.chain.from_iterable(csystems))))
     scorelist = list(itertools.chain.from_iterable(cscores))
     mscorelist = list(itertools.chain.from_iterable(mscores))
     fullscorelist = list(map(tuple, itertools.chain.from_iterable(cscoresfull)))
@@ -38,7 +38,7 @@ def scorecommongroups(includemixed = 0):
     # compute statistics reported in paper
     paperpercent = list(zip(scorelist, mscorelist, clist))
     pc = pd.DataFrame(paperpercent, columns = ["humanscore", "modelscore", "concept"])
-    pc = pc.sort_values(by=['humanscore', 'concept'])
+    pc = pc.sort_values(by=['humanscore', 'concept'], kind ='stable')
     pc['clen'] = pc['concept'].map(len)
     pc.to_csv('../output/results/paperpercent_df.csv', index_label="index")
 
@@ -63,7 +63,14 @@ def scorecommongroups(includemixed = 0):
     sortedscores_mm = sorted(cscores_mm, reverse=True)
     comps = list(zip(*sortedscores_mm))
     clist, cscores, mmscores, mscores = comps[3], comps[0], comps[1], comps[2]
-    sh.printcscores(stars, clist, cscores, mmscores, mscores)
+    # sh.printcscores(stars, clist, cscores, mmscores, mscores, outfile='../output/results/TMPTEST')
+
+    # sort by mmscores to check which groups have highest adjusted scores
+    # cscores_mm = list(zip(mmscores, cscores, mscores, clist))
+    # sortedscores_mm = sorted(cscores_mm, reverse=True)
+    # comps = list(zip(*sortedscores_mm))
+    # clist, cscores, mmscores, mscores = comps[3], comps[1], comps[0], comps[2]
+    # sh.printcscores(stars, clist, cscores, mmscores, mscores, outfile='../output/results/TMPTEST')
 
     clset = sh.llist2lset(clist)
     finalc, finalscore, finalmmscore, finalmscore = [], [], [], []

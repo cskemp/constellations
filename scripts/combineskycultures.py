@@ -52,7 +52,7 @@ for filei, infile in enumerate(infiles):
             ids = ids[1:-1]
             ids = list(map(int, ids.split(',')))
             if len(ids) > 0:
-                clist.append(ids)
+                clist.append(sorted(ids))
 
 # all human data
 cout = '../output/data/allhuman.txt'
@@ -69,7 +69,7 @@ cout = '../output/data/allhuman_ourids.txt'
 allmags = []
 for ii, cll in enumerate(clists):
     for j, cl in enumerate(cll):
-        cll[j] = [invhd[s] for s in cl if s in invhd]
+        cll[j] = sorted([invhd[s] for s in cl if s in invhd])
         allmags = allmags + [(cnames[ii], stars[invhd[s]][3]) for s in cl if s in invhd]
 
 hd = (cnames, clists)
@@ -88,7 +88,7 @@ with open(cout, 'w') as f:
 
 stargraph = sh.makestargraph(starfile, [3.5, 4.0, 4.5])
 
-clists_bright= [ list(map(list, sh.brightclusters(clist, stargraph, 4.5))) for clist in clists]
+clists_bright= [ list(map(sorted, sh.brightclusters(clist, stargraph, 4.5))) for clist in clists]
 
 # all human data with our ids
 cout_bright = '../output/data/allhuman_bright_ourids.txt'

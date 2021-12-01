@@ -29,7 +29,7 @@ def read():
                         c = c[2:]
                         c = [hip2hr[int(e)] for e in c if int(e) in hip2hr and hip2hr[int(e)] != '']
                         c = [str(removaldict[int(e)]) if int(e) in removaldict else e for e in c]
-                        c = list(set(c))
+                        c = sorted(list(set(c)))
                         starstr = ','.join(c)
                         if len(c) > 1:
                             stellout.write('[' + starstr + ']\n')

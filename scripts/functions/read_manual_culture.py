@@ -70,7 +70,7 @@ def read(cflag):
               ids = [removaldict[i] if i in removaldict else i for i in ids]
 
               if len(ids) > 1:
-                  cs.append(ids)
+                  cs.append(sorted(ids))
     
     # no longer merge rows that have shared ids
     # cs = merge(cs)
