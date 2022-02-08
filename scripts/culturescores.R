@@ -47,13 +47,13 @@ perculturepic <- cscores %>%
   geom_histogram(bins=10) +
   scale_y_continuous(breaks=integer_breaks(n=3),limits = c(0, NA)) +
   scale_x_continuous(breaks=pretty_breaks(3)) + 
-  facet_wrap(~culture, scales='free_y') +
+  facet_wrap(~culture, scales='free_y', ncol = 5) +
   labs(x="model score")+
   theme_classic(base_size=10) +
   theme(strip.background = element_blank())
 plot(perculturepic)
 
-ggsave(here("output","figures", "perculturehistogram.pdf"), plot = perculturepic, width = 6.75, height=4.5)
+ggsave(here("output","figures", "perculturehistogram.pdf"), plot = perculturepic, width = 5.625, height=4.5)
 
 
 # Make Figure S14 
