@@ -31,7 +31,7 @@ cscores_orig <- read_csv(here("output","results", "perculturescores.csv"), col_n
 
 cscores <- cscores_orig %>% 
   mutate(culture =  recode(culture, "arabic_moon_stations"="arabic", "vanuatu_netwar"="lenekel", "mulapin"="babylonian", "india"="indian", "indomalay" = "Indo-Malay", "maya" = "mayan")) %>% 
-  mutate(macrogroup = recode(macrogroup, "asia"="(AS)", "australia" = "(AU)", "nthamerica" = "(N)", "oceania" = "(O)", "sthamerica" = "(S)", "western" = "(W)")) %>%  
+  mutate(macrogroup = recode(macrogroup, "asia"="(AS)", "australia" = "(AU)", "nthamerica" = "(N)", "oceania" = "(O)", "sthamerica" = "(S)", "western" = "(E)")) %>%  
   mutate(culture = paste(culture, macrogroup))
 
 
